@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="get">
+        <fieldset>
+            <legend>HTML Form</legend>
+        <label for="a">Enter f.name:</label><input type="text" name="fname" id="a">
+<hr>
+        <label for="b">Enter l.name:</label><input type="text" name="lname" id="b">
+        <hr>
+        <label for="c">Enter age:</label><input type="number" min="0" max="99" id="c">
+        <hr>
+        <label for="d">Enter email:</label><input type="email"  id="d">
+
+        <hr>
+        <label for="e">Enter password:</label><input type="password" id="e">
+<hr>
+        Gender: <input type="radio" name="gender" id="m" value="boy"><label for="m">Male</label>
+        <input type="radio" name="gender" id="f" value="girl"><label for="f">female</label>
+        <hr>
+        gender: <select name="gender">
+            <option value="boys">male</option>
+            <option value="girls">female</option>
+        </select>
+        <hr>
+        message: <textarea name="message" cols="30" rows="10"></textarea>
+        <hr>
+        <script src="https://cdn.ckeditor.com/4.21.0/standard/ckeditor.js"></script>
+        <script>
+            CKEDITOR.replace( 'message' );
+    </script>
+    date: <input type="date" name="date">
+    time: <input type="time" name="time"> 
+    Date and time: <input type="datetime-local" name="dt">
+    Month: <input type="month" name="month">
+    Week: <input type="week" name="week">
+    Color: <input type="color" name="color">
+    URL:<input type="url" name="url">
+    Search:<input type="search" name="search">
+    tel:<input type="tel" name="tel">
+    number:<input type="number" name="num">
+    range:<input type="range" name="range">
+    file:<input type="file" name="file" accept="image/*">
+    Food: <select name="food" multiple size="8">
+        <optgroup label="Fruits">
+        <option>Mango</option><option>Apple</option><option>Orange</option>
+    </optgroup>
+    <optgroup label="Vegetables">
+        <option>Beans</option><option>Cauliflower</option><option>Tomato</option>
+    </optgroup>
+
+    </select>
+    reset button:<input type="reset">
+    <hr>
+    submit button:<input type="submit">
+    <hr>
+    Submit button in image:<input type="image" src="a.png" width="10">
+    <hr>
+     color: <input type="checkbox" name="color" value="red">red
+    <input type="checkbox" name="color" value="green"> Green
+    <input type="checkbox" name="color" value="blue"> Blue
+    <hr>
+    country: <input type="text" name="country" list="r">
+    <datalist id="r">
+        <option value="USA"></option>
+        <option value="Canada"></option>
+        <option value="Mexico"></option>
+        <option value="Brazil"></option>
+    </datalist>
+    Pattern: <input type="text" name="Pattern" pattern=[aA-zZ]{0,4}>
+    Food: <select name="food" id="">
+        <option value="Mango"></option>
+        <option value="Apple"></option>
+        <option value="Orange"></option>
+
+    </select>
+    Normal: <input type="text" name="Normal" value="Unique" readonly>
+    Normal1: <input type="text" name="Normal1" required>
+    Normal2: <input type="text" name="Normal2" value="Unik" disabled>
+    Normal3: <input type="hidden" name="Normal3" value="unikkk" >
+    <hr>
+    Normal4: <input type="text" name="Normal4" placeholder="Enter full name">
+    Normal5: <input type="text" name="fname" autocomplete="off">
+    Normal6: <input type="text" name="lname" autofocus>
+
+
+
+
+
+
+        <button>Send</button>
+    </fieldset>
+    </form>
+    
+</body>
+</html>
